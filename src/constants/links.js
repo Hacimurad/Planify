@@ -1,0 +1,2 @@
+export const PrivacyPolicy = 'https://www.freeprivacypolicy.com/live/18e7c858-bbd6-486e-ac10-3e87169d8152';
+export const TermsOfService = 'https://www.freeprivacypolicy.com/live/d94ec22f-6b2a-4b0c-aa44-02d979c093c2';
