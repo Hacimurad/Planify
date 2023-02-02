@@ -2,9 +2,9 @@ import React from "react";
 import {Text, TouchableOpacity } from "react-native";
 import styles from "./styles";
 
-const Title=({children})=>{
+const Title=({children,type})=>{
     return(
-        <Text style={styles.title}>{children}</Text>
+        <Text  style={[styles.title,type === 'thin'? styles.thin : {} ]}>{children}</Text>
     )
 }
 

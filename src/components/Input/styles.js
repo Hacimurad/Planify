@@ -11,7 +11,13 @@ const styles = StyleSheet.create({
         color: colors.black,
         marginVertical: 8,
         fontSize: 16,
-    }
+    },
+    outline: {
+        backgroundColor: colors.white,
+        borderWidth: 1,
+        borderColor: colors.black,
+        marginHorizontal: 24,
+    },
 });
 
 export default styles;

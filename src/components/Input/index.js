@@ -3,11 +3,11 @@ import {TextInput} from 'react-native';
 import styles from './styles';
 import colors from '../../constants/colors';
 
-const Input = ({...props}) => {
+const Input = ({outline,...props}) => {
   return (
     <TextInput
       placeholderTextColor={colors.midGray}
-      style={styles.input}
+      style={[styles.input, outline && styles.outline]}
       {...props}
     />
   );
