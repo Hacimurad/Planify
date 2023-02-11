@@ -22,6 +22,11 @@ const styles = StyleSheet.create({
         marginTop: 25,
         marginBottom: 10,
     },
+    button: {
+        margin: 25,
+        marginTop: 30,
+
+    },
 });
 
 export default styles;

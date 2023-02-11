@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         fontWeight:'bold',
         padding:8,
         paddingHorizontal:12,
-        textTransform:'capitalize'
+        textTransform:'capitalize',
     },
     selectedItem:{
         color:colors.blue,
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         borderWidth:1,
         borderColor:colors.blue,
         marginRight: 8,
-        marginBottom: 14,
+        marginVertical: 10,
     },
     selectedItemsContainer:{
         borderColor:colors.grayCate,

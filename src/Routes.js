@@ -5,6 +5,9 @@ import auth from '@react-native-firebase/auth';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createStackNavigator} from '@react-navigation/stack';
+import {useDispatch, useSelector} from 'react-redux';
+import { setUser } from './store/user';
+
 import Onboarding from './screens/auth/Onboarding';
 import Signin from './screens/auth/Signin';
 import Signup from './screens/auth/Signup';
@@ -18,13 +21,14 @@ const Drawer = createDrawerNavigator();
 const Tab = createBottomTabNavigator();
 
 const Routes = () => {
+  const dispatch = useDispatch()
+  const user = useSelector(state => state.user.data)
   // Set an initializing state whilst Firebase connects
   const [initializing, setInitializing] = useState(true);
-  const [user, setUser] = useState();
 
   // Handle user state changes
   function onAuthStateChanged(user) {
-    setUser(user);
+    dispatch(setUser(user));
     if (initializing) setInitializing(false);
   }
 
